@@ -10,23 +10,25 @@ const TopPages = () => {
         <React.Fragment>
             <Col xl={4} md={6}>
                 <Card className="card-height-100">
-                    <CardHeader className="align-items-center d-flex">
-                        <h4 className="card-title mb-0 flex-grow-1">صفحات برتر</h4>
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
+                    <h4 className="card-title mb-0 flex-grow-1">صفحات برتر</h4>
+
                         <div className="flex-shrink-0">
                             <Dropdown isOpen={isTopPageDropdown} toggle={toggleDropdown} className="card-header-dropdown">
                                 <DropdownToggle tag="a" className="text-reset dropdown-btn" role="button">
                                     <span className="text-muted fs-16"><i className="mdi mdi-dots-vertical align-middle"></i></span>
                                 </DropdownToggle>
-                                <DropdownMenu className="dropdown-menu-end">
+                                <DropdownMenu className="dropdown-menu-end" dir="rtl">
                                     <DropdownItem>امروز</DropdownItem>
-                                    <DropdownItem>گذشته هفته</DropdownItem>
-                                    <DropdownItem>گذشته ماه</DropdownItem>
+                                    <DropdownItem>هفته گذشته</DropdownItem>
+                                    <DropdownItem>ماه گذشته</DropdownItem>
                                     <DropdownItem>سال جاری</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
                         </div>
+
                     </CardHeader>
-                    <CardBody>
+                    <CardBody dir="rtl">
                         <div className="table-responsive table-card">
                             <table className="table align-middle table-borderless table-centered table-nowrap mb-0">
                                 <thead className="text-muted table-light">

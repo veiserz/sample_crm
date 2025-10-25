@@ -11,7 +11,7 @@ const Widget = () => {
             <Row>
                 <Col md={6}>
                     <Card className="card-animate">
-                        <CardBody>
+                        <CardBody dir="rtl">
                             <div className="d-flex justify-content-between">
                                 <div>
                                     <p className="fw-medium text-muted mb-0">کاربران</p>
@@ -26,7 +26,7 @@ const Widget = () => {
                                             0</span>k</h2>
                                     <p className="mb-0 text-muted"><span className="badge bg-light text-success mb-0">
                                         <i className="ri-arrow-up-line align-middle"></i> 16.24 %
-                                    </span> در ماه قبل</p>
+                                    </span> نسبت به ماه قبل</p>
                                 </div>
                                 <div>
                                     <div className="avatar-sm flex-shrink-0">
@@ -45,7 +45,7 @@ const Widget = () => {
 
                 <Col md={6}>
                     <Card className="card-animate">
-                        <CardBody>
+                        <CardBody dir="rtl">
                             <div className="d-flex justify-content-between">
                                 <div>
                                     <p className="fw-medium text-muted mb-0">جلسات</p>
@@ -60,7 +60,7 @@ const Widget = () => {
                                         </span>k</h2>
                                     <p className="mb-0 text-muted"><span className="badge bg-light text-danger mb-0">
                                         <i className="ri-arrow-down-line align-middle"></i> 3.96 %
-                                    </span> در ماه قبل</p>
+                                    </span> نسبت به ماه قبل</p>
                                 </div>
                                 <div>
                                     <div className="avatar-sm flex-shrink-0">
@@ -81,7 +81,7 @@ const Widget = () => {
             <Row>
                 <Col md={6}>
                     <Card className="card-animate">
-                        <CardBody>
+                        <CardBody dir="rtl">
                             <div className="d-flex justify-content-between">
                                 <div>
                                     <p className="fw-medium text-muted mb-0">مدت زمان میانگین بازدید</p>
@@ -92,17 +92,17 @@ const Widget = () => {
                                                 end={3}
                                                 duration={4}
                                             />
-                                        </span>m{" "}
+                                        </span>دقیقه{" "}
                                         <span className="counter-value" data-target="40">
                                             <CountUp
                                                 start={0}
                                                 end={40}
                                                 duration={4}
                                             />
-                                        </span>sec</h2>
+                                        </span>ثانیه</h2>
                                     <p className="mb-0 text-muted"><span className="badge bg-light text-danger mb-0">
                                         <i className="ri-arrow-down-line align-middle"></i> 0.24 %
-                                    </span> در ماه قبل</p>
+                                    </span> نسبت به ماه قبل</p>
                                 </div>
                                 <div>
                                     <div className="avatar-sm flex-shrink-0">
@@ -121,7 +121,7 @@ const Widget = () => {
 
                 <Col md={6}>
                     <Card className="card-animate">
-                        <CardBody>
+                        <CardBody dir="rtl">
                             <div className="d-flex justify-content-between">
                                 <div>
                                     <p className="fw-medium text-muted mb-0">نرخ بازگشت</p>
@@ -136,7 +136,7 @@ const Widget = () => {
                                         </span>%</h2>
                                     <p className="mb-0 text-muted"><span className="badge bg-light text-success mb-0">
                                         <i className="ri-arrow-up-line align-middle"></i> 7.05 %
-                                    </span> در ماه قبل</p>
+                                    </span> نسبت به ماه قبل</p>
                                 </div>
                                 <div>
                                     <div className="avatar-sm flex-shrink-0">

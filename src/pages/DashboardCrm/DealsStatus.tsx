@@ -8,29 +8,29 @@ const DealsStatus = () => {
         <React.Fragment>
             <Col xl={7}>
                 <Card>
-                    <CardHeader className="align-items-center d-flex">
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
                         <h4 className="card-title mb-0 flex-grow-1">وضعیت معاملات</h4>
                         <div className="flex-shrink-0">
                             <UncontrolledDropdown className="card-header-dropdown">
                                 <DropdownToggle tag="a" className="text-reset dropdown-btn" role="button">
                                     <span className="text-muted">02 نوامبر 2021 تا 31 دسامبر 2021<i className="mdi mdi-chevron-down ms-1"></i></span>
                                 </DropdownToggle>
-                                <DropdownMenu className="dropdown-menu-end">
+                                <DropdownMenu className="dropdown-menu-end" dir="rtl">
                                     <DropdownItem>امروز</DropdownItem>
-                                    <DropdownItem>هفته</DropdownItem>
-                                    <DropdownItem>ماه</DropdownItem>
-                                    <DropdownItem>سال</DropdownItem>
+                                    <DropdownItem>هفته گذشته</DropdownItem>
+                                    <DropdownItem>ماه گذشته</DropdownItem>
+                                    <DropdownItem>سال جاری</DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </div>
                     </CardHeader>
 
-                    <CardBody>
+                    <CardBody dir="rtl">
                         <div className="table-responsive table-card">
                             <table className="table table-borderless table-hover table-nowrap align-middle mb-0">
                                 <thead className="table-light">
                                     <tr className="text-muted">
-                                        <th scope="col">اسم شرکت</th>
+                                        <th scope="col">نام شرکت</th>
                                         <th scope="col" style={{ width: "20%" }}>آخرین تماس</th>
                                         <th scope="col" >نماینده فروش</th>
                                         <th scope="col" style={{ width: "16%" }}>وضعیت</th>
@@ -43,7 +43,7 @@ const DealsStatus = () => {
                                         <tr key={index}>
                                             <td>{item.name}</td>
                                             <td>{item.date}</td>
-                                            <td><img src={item.img} alt="" className="avatar-xs rounded-circle me-2" />{" "}
+                                            <td><img src={item.img} alt="" className="avatar-xs rounded-circle ms-2" />{" "}
                                                 <Link to="#" className="text-body fw-medium">{item.representativeName}</Link></td>
                                                 <td><span className={"badge bg-" + item.badgeClass + " p-2 text-" + item.color}>{item.status}</span></td>
                                                 <td><div className="text-nowrap">{item.statusValue}</div></td>

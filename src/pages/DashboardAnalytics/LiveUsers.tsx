@@ -39,17 +39,16 @@ const LiveUsers = () => {
                 <Row className="h-100">
                     <Col xl={6}>
                         <Card className="card-height-100">
-                            <div className="card-header align-items-center d-flex">
+                            <div className="card-header align-items-center d-flex" dir="rtl">
                                 <h4 className="card-title mb-0 flex-grow-1">کاربران آنلاین بر اساس کشور</h4>
                                 <div className="flex-shrink-0">
                                     <button type="button" className="btn btn-soft-primary btn-sm">
-                                        صادر کردن گزارش
-                                    </button>
+گرفتن گزارش                                    </button>
                                 </div>
                             </div>
 
 
-                            <CardBody>
+                            <CardBody dir="rtl">
                                 <div
                                     className="text-center"
                                     style={{ height: "252px" }}
@@ -99,7 +98,7 @@ const LiveUsers = () => {
 
                     <Col xl={6}>
                         <Card className="card-height-100">
-                            <div className="card-header align-items-center d-flex">
+                            <div className="card-header align-items-center d-flex" dir="rtl">
                                 <h4 className="card-title mb-0 flex-grow-1">جلسات بر اساس کشورها</h4>
                                 <div className="d-flex gap-1">
                                     <button type="button" className={classNames({ active: periodType === "all" }, "btn btn-soft-secondary btn-sm")} onClick={() => { onChangeChartPeriod("all"); }}>

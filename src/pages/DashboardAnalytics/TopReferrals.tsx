@@ -10,16 +10,17 @@ const TopReferrals = () => {
         <React.Fragment>
             <Col xl={4} md={6}>
                 <Card className="card-height-100">
-                    <CardHeader className="align-items-center d-flex">
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
                         <h4 className="card-title mb-0 flex-grow-1">صفحات ارجاع‌دهنده برتر</h4>
                         <div className="flex-shrink-0">
                             <button type="button" className="btn btn-soft-primary btn-sm">
-                                صادر کردن گزارش
+                            گرفتن گزارش                            
+
                             </button>
                         </div>
                     </CardHeader>
 
-                    <CardBody>
+                    <CardBody dir="rtl">
 
                         <Row className="align-items-center">
                             <Col xs={6}>
@@ -27,7 +28,7 @@ const TopReferrals = () => {
                                 <h4 className="fs- mb-0">725,800</h4>
                                 <p className="mb-0 mt-2 text-muted"><span className="badge bg-success-subtle text-success mb-0">
                                     <i className="ri-arrow-up-line align-middle"></i> 15.72 %
-                                </span> به مقایسه با ماه قبل</p>
+                                </span> نسبت به ماه قبل</p>
                             </Col>
                             <Col xs={6}>
                                 <div className="text-center">
@@ -48,7 +49,7 @@ const TopReferrals = () => {
                         <div className="mt-3 pt-2">
                             <div className="d-flex mb-2">
                                 <div className="flex-grow-1">
-                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-primary me-2"></i>www.google.com</p>
+                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-primary ms-2"></i>www.google.com</p>
                                 </div>
                                 <div className="flex-shrink-0">
                                     <p className="mb-0">24.58%</p>
@@ -56,7 +57,7 @@ const TopReferrals = () => {
                             </div>
                             <div className="d-flex mb-2">
                                 <div className="flex-grow-1">
-                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-info me-2"></i>www.youtube.com</p>
+                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-info ms-2"></i>www.youtube.com</p>
                                 </div>
                                 <div className="flex-shrink-0">
                                     <p className="mb-0">17.51%</p>
@@ -64,7 +65,7 @@ const TopReferrals = () => {
                             </div>
                             <div className="d-flex mb-2">
                                 <div className="flex-grow-1">
-                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-success me-2"></i>www.meta.com</p>
+                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-success ms-2"></i>www.meta.com</p>
                                 </div>
                                 <div className="flex-shrink-0">
                                     <p className="mb-0">23.05%</p>
@@ -72,7 +73,7 @@ const TopReferrals = () => {
                             </div>
                             <div className="d-flex mb-2">
                                 <div className="flex-grow-1">
-                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-warning me-2"></i>www.medium.com</p>
+                                    <p className="text-truncate text-muted fs-15 mb-0"><i className="mdi mdi-circle align-middle text-warning ms-2"></i>www.medium.com</p>
                                 </div>
                                 <div className="flex-shrink-0">
                                     <p className="mb-0">12.22%</p>
@@ -80,7 +81,7 @@ const TopReferrals = () => {
                             </div>
                             <div className="d-flex">
                                 <div className="flex-grow-1">
-                                    <p className="text-truncate text-muted fs-14 mb-0"><i className="mdi mdi-circle align-middle text-danger me-2"></i>Other</p>
+                                    <p className="text-truncate text-muted fs-14 mb-0"><i className="mdi mdi-circle align-middle text-danger ms-2"></i>سایر</p>
                                 </div>
                                 <div className="flex-shrink-0">
                                     <p className="mb-0">17.58%</p>

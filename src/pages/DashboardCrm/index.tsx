@@ -11,12 +11,12 @@ import UpcomingActivities from './UpcomingActivities';
 import Widgets from './Widgets';
 
 const DashboardCrm = () => {
-    document.title="CRM | Velzon - React Admin & Dashboard Template";
+    document.title="داشبورد همیار CRM";
     return (
         <React.Fragment>
-            <div className="page-content">
+            <div className="page-content" dir="rtl">
                 <Container fluid>                            
-                    <BreadCrumb title="CRM" pageTitle="Dashboards" />
+                    <BreadCrumb title="داشبورد" pageTitle="داشبورد همیار CRM " />
                     <Row>
                         <Widgets />
                     </Row>

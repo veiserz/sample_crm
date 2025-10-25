@@ -48,64 +48,62 @@ const ProfileDropdown = () => {
                             alt="Header Avatar" />
                         <span className="text-start ms-xl-2">
                             <span className="d-none d-xl-inline-block ms-1 fw-medium user-name-text">{userName}</span>
-                            <span className="d-none d-xl-block ms-1 fs-13 text-muted user-name-sub-text">Founder</span>
+                            <span className="d-none d-xl-block ms-1 fs-13 text-muted user-name-sub-text">ادمین</span>
                         </span>
                     </span>
                 </DropdownToggle>
-                <DropdownMenu className="dropdown-menu-end">
-                    <h6 className="dropdown-header">Welcome {userName}!</h6>
+                <DropdownMenu className="dropdown-menu-end" style={{ direction: 'rtl' , textAlign: 'right'}}>
+                    <h6 className="dropdown-header" style={{ direction: 'rtl' , textAlign: 'center'}}>خوش آمدید {userName}!</h6>
                     <DropdownItem className='p-0'>
                         <Link to="/profile" className="dropdown-item">
                             <i className="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
-                            <span className="align-middle"> Profile</span>
+                            <span className="align-middle"> پروفایل</span>
                         </Link>
                     </DropdownItem>
                     <DropdownItem className='p-0'>
                         <Link to="/apps-chat" className="dropdown-item">
                             <i className="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span
-                                className="align-middle">Messages</span>
+                                className="align-middle" >پیام‌ها</span>
                         </Link>
                     </DropdownItem>
                     <DropdownItem className='p-0'>
                         <Link to={"#"} className="dropdown-item">
                             <i className="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span
-                                className="align-middle">Taskboard</span>
+                                className="align-middle">تخته کار</span>
                         </Link>
                     </DropdownItem>
                     <DropdownItem className='p-0'>
                         <Link to="/pages-faqs" className="dropdown-item">
                             <i
                                 className="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
-                                    className="align-middle">Help</span>
+                                    className="align-middle">راهنما</span>
                         </Link>
                     </DropdownItem>
                     <div className="dropdown-divider"></div>
                     <DropdownItem className='p-0'>
-                        <Link to="/pages-profile" className="dropdown-item">
+                        <Link to="/pages-profile" className="dropdown-item" style={{ direction: 'rtl' , textAlign: 'right'}}>
                             <i
                                 className="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span
-                                    className="align-middle">Balance : <b>$5971.67</b></span>
+                                    className="align-middle">موجودی : <b>$5971.67</b></span>
                         </Link>
                     </DropdownItem>
                     <DropdownItem className='p-0'>
-                        <Link to="/pages-profile-settings" className="dropdown-item">
-                            <span
-                                className="badge bg-success-subtle text-success mt-1 float-end">New</span><i
-                                    className="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span
-                                        className="align-middle">Settings</span>
+                        <Link to="/pages-profile-settings" className="dropdown-item d-flex align-items-center">
+                            <i className="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i><span style={{ float: "right" }}
+                                   className="align-middle">تنظیمات</span>
                         </Link>
                     </DropdownItem>
                     <DropdownItem className='p-0'>
                         <Link to="/auth-lockscreen-basic" className="dropdown-item">
                             <i
-                                className="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span className="align-middle">Lock screen</span>
+                                className="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span className="align-middle">قفل صفحه</span>
                         </Link>
                     </DropdownItem>
                     <DropdownItem className='p-0'>
                         <Link to="/logout" className="dropdown-item">
                             <i
                                 className="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
-                                    className="align-middle" data-key="t-logout">Logout</span>
+                                    className="align-middle" data-key="t-logout">خروج</span>
                         </Link>
                     </DropdownItem>
                 </DropdownMenu>

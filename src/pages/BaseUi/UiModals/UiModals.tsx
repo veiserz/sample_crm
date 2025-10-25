@@ -2005,7 +2005,7 @@ const UiModals = () => {
                         </div>
                     </Col>
                     <Col lg={5}>
-                        <div className="subscribe-modals-cover h-100">
+                        <div className="subscribe-modals-cover h-100" style={{ backgroundColor: 'red' }}>
                             <img src={authbg} alt="" className="h-100 w-100 object-fit-cover" style={{ clipPath: "polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 25% 50%, 0% 0%)" }} />
                         </div>
                     </Col>

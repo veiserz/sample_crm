@@ -15,25 +15,25 @@ const UpgradeAccountNotise = () => {
                 <Col xs={12}>
                     <Card>
                         <CardBody className="p-0">
-                            <Alert className="alert alert-warning border-0 rounded-0 m-0 d-flex align-items-center" role="alert">
+                            <Alert className="alert alert-warning border-0 rounded-0 m-0 d-flex align-items-center" role="alert" dir="rtl">
                                 <FeatherIcon
                                     icon="alert-triangle"
-                                    className="text-warning me-2 icon-sm"
+                                    className="text-warning ms-2 icon-sm"
                                 />
                                 <div className="flex-grow-1 text-truncate">
-                                    تایمر آزمایشی شما به پایان رسیده است.
+                                    دوره آزمایشی شما به پایان رسیده است.
                                 </div>
                                 <div className="flex-shrink-0">
-                                    <Link to="/pages-pricing" className="text-reset text-decoration-underline"><b>به بالاترین سطح</b></Link>
+                                    <Link to="/pages-pricing" className="text-reset text-decoration-underline"><b>ارتقا دهید</b></Link>
                                 </div>
                             </Alert>
 
-                            <Row className="align-items-end">
+                            <Row className="align-items-end" dir="rtl">
                                 <Col sm={8}>
                                     <div className="p-3">
-                                            <p className="fs-20 lh-base">به بالاترین سطح خود از طریق <span className="fw-semibold">رایگاه خرید</span>, به 'سطح پیشرفته' <i className="mdi mdi-arrow-right"></i></p>
+                                            <p className="fs-20 lh-base">حساب خود را از طریق <span className="fw-semibold">صفحه قیمت‌گذاری</span> به <span className="fw-semibold">سطح پیشرفته</span> ارتقا دهید <i className="mdi mdi-arrow-left"></i></p>
                                         <div className="mt-3">
-                                            <Link to="/pages-pricing" className="btn btn-secondary">به بالاترین سطح!</Link>
+                                            <Link to="/pages-pricing" className="btn btn-secondary">ارتقا دهید!</Link>
                                         </div>
                                     </div>
                                 </Col>

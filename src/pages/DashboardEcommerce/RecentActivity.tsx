@@ -24,8 +24,8 @@ const RecentActivity = (props:any) => {
           <Card className="h-100 rounded-0">
             <CardBody className="p-0">
               <div className="p-3">
-                <h6 className="text-muted mb-0 text-uppercase fw-semibold fs-13">
-                  Recent Activity
+                <h6 className="text-muted mb-0 text-uppercase fw-semibold fs-13" dir="rtl">
+                  فعالیت‌های اخیر
                 </h6>
               </div>
               <SimpleBar style={{ maxHeight: "410px" }} className="p-3 pt-0">
@@ -36,12 +36,12 @@ const RecentActivity = (props:any) => {
                         <i className="ri-shopping-cart-2-line"></i>
                       </div>
                     </div>
-                    <div className="flex-grow-1 ms-3">
-                      <h6 className="mb-1 lh-base">Purchase by James Price</h6>
+                    <div className="flex-grow-1 me-3">
+                      <h6 className="mb-1 lh-base">خرید توسط جیمز پرایس</h6>
                       <p className="text-muted mb-1">
-                        Product noise evolve smartwatch{" "}
+                        محصول ساعت هوشمند نویز ایولف{" "}
                       </p>
-                      <small className="mb-0 text-muted">02:14 PM Today</small>
+                      <small className="mb-0 text-muted">امروز ساعت 14:14</small>
                     </div>
                   </div>
                   <div className="acitivity-item py-3 d-flex">
@@ -50,12 +50,12 @@ const RecentActivity = (props:any) => {
                         <i className="ri-stack-fill"></i>
                       </div>
                     </div>
-                    <div className="flex-grow-1 ms-3">
+                    <div className="flex-grow-1 me-3">
                       <h6 className="mb-1 lh-base">
-                        Added new{" "}
-                        <span className="fw-semibold">style collection</span>
+                        افزودن{" "}
+                        <span className="fw-semibold">مجموعه استایل جدید</span>
                       </h6>
-                      <p className="text-muted mb-1">By Nesta Technologies</p>
+                      <p className="text-muted mb-1">توسط تکنولوژی‌های نستا</p>
                       <div className="d-inline-flex gap-2 border border-dashed p-2 mb-2">
                         <Link
                           to="/apps-ecommerce-product-details"
@@ -89,7 +89,7 @@ const RecentActivity = (props:any) => {
                         </Link>
                       </div>
                       <p className="mb-0 text-muted">
-                        <small>9:47 PM Yesterday</small>
+                        <small>دیروز ساعت 21:47</small>
                       </p>
                     </div>
                   </div>
@@ -101,14 +101,14 @@ const RecentActivity = (props:any) => {
                         className="avatar-xs rounded-circle acitivity-avatar"
                       />
                     </div>
-                    <div className="flex-grow-1 ms-3">
+                    <div className="flex-grow-1 me-3">
                       <h6 className="mb-1 lh-base">
-                        Natasha Carey have liked the products
+                        ناتاشا کری محصولات را لایک کرده است
                       </h6>
                       <p className="text-muted mb-1">
-                        Allow users to like products in your WooCommerce store.
+                        به کاربران اجازه دهید محصولات را در فروشگاه ووکامرس شما لایک کنند.
                       </p>
-                      <small className="mb-0 text-muted">25 Dec, 2021</small>
+                      <small className="mb-0 text-muted">25 دسامبر 2021</small>
                     </div>
                   </div>
                   <div className="acitivity-item py-3 d-flex">
@@ -119,21 +119,20 @@ const RecentActivity = (props:any) => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex-grow-1 ms-3">
+                    <div className="flex-grow-1 me-3">
                       <h6 className="mb-1 lh-base">
-                        Today offers by{" "}
+                        پیشنهادات امروز توسط{" "}
                         <Link
                           to="/apps-ecommerce-seller-details"
                           className="link-secondary"
                         >
-                          Digitech Galaxy
+                          دیجی‌تک گالکسی
                         </Link>
                       </h6>
                       <p className="text-muted mb-2">
-                        Offer is valid on orders of Rs.500 Or above for selected
-                        products only.
+                        پیشنهاد فقط برای سفارشات بالای 500 روپیه و برای محصولات انتخاب شده معتبر است.
                       </p>
-                      <small className="mb-0 text-muted">12 Dec, 2021</small>
+                      <small className="mb-0 text-muted">12 دسامبر 2021</small>
                     </div>
                   </div>
                   <div className="acitivity-item py-3 d-flex">
@@ -144,12 +143,12 @@ const RecentActivity = (props:any) => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex-grow-1 ms-3">
-                      <h6 className="mb-1 lh-base">Favoried Product</h6>
+                    <div className="flex-grow-1 me-3">
+                      <h6 className="mb-1 lh-base">محصول مورد علاقه</h6>
                       <p className="text-muted mb-2">
-                        Esther James have favorited product.
+                        استر جیمز محصول را به علاقه‌مندی‌ها اضافه کرده است.
                       </p>
-                      <small className="mb-0 text-muted">25 Nov, 2021</small>
+                      <small className="mb-0 text-muted">25 نوامبر 2021</small>
                     </div>
                   </div>
                   <div className="acitivity-item py-3 d-flex">
@@ -160,18 +159,18 @@ const RecentActivity = (props:any) => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex-grow-1 ms-3">
+                    <div className="flex-grow-1 me-3">
                       <h6 className="mb-1 lh-base">
-                        Flash sale starting{" "}
-                        <span className="text-primary">Tomorrow.</span>
+                        فروش فلش شروع می‌شود{" "}
+                        <span className="text-primary">فردا.</span>
                       </h6>
                       <p className="text-muted mb-0">
-                        Flash sale by{" "}
+                        فروش فلش توسط{" "}
                         <Link to="#" className="link-secondary fw-medium">
-                          Zoetic Fashion
+                          زوئتیک فشن
                         </Link>
                       </p>
-                      <small className="mb-0 text-muted">22 Oct, 2021</small>
+                      <small className="mb-0 text-muted">22 اکتبر 2021</small>
                     </div>
                   </div>
                   <div className="acitivity-item py-3 d-flex">
@@ -182,19 +181,19 @@ const RecentActivity = (props:any) => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex-grow-1 ms-3">
-                      <h6 className="mb-1 lh-base">Monthly sales report</h6>
+                    <div className="flex-grow-1 me-3">
+                      <h6 className="mb-1 lh-base">گزارش فروش ماهانه</h6>
                       <p className="text-muted mb-2">
-                        <span className="text-danger">2 days left</span>{" "}
-                        notification to submit the monthly sales report.{" "}
+                        <span className="text-danger">2 روز باقی مانده</span>{" "}
+                        برای ارسال گزارش فروش ماهانه اطلاعیه.{" "}
                         <Link
                           to="#"
                           className="link-warning text-decoration-underline"
                         >
-                          Reports Builder
+                          سازنده گزارش
                         </Link>
                       </p>
-                      <small className="mb-0 text-muted">15 Oct</small>
+                      <small className="mb-0 text-muted">15 اکتبر</small>
                     </div>
                   </div>
                   <div className="acitivity-item d-flex">
@@ -205,49 +204,48 @@ const RecentActivity = (props:any) => {
                         className="avatar-xs rounded-circle acitivity-avatar"
                       />
                     </div>
-                    <div className="flex-grow-1 ms-3">
-                      <h6 className="mb-1 lh-base">Frank Hook Commented</h6>
+                    <div className="flex-grow-1 me-3">
+                      <h6 className="mb-1 lh-base">فرانک هوک نظر داده است</h6>
                       <p className="text-muted mb-2 fst-italic">
-                        " A product that has reviews is more likable to be sold
-                        than a product. "
+                        " محصولی که نظرات دارد بیشتر احتمال فروش دارد تا محصولی که نظرات ندارد. "
                       </p>
-                      <small className="mb-0 text-muted">26 Aug, 2021</small>
+                      <small className="mb-0 text-muted">26 اوت 2021</small>
                     </div>
                   </div>
                 </div>
               </SimpleBar>
 
               <div className="p-3 mt-2">
-                <h6 className="text-muted mb-3 text-uppercase fw-semibold fs-13">
-                  Top 10 Categories
+                <h6 className="text-muted mb-3 text-uppercase fw-semibold fs-13" dir="rtl">
+                  برترین 10 دسته‌بندی
                 </h6>
 
-                <ol className="ps-3 text-muted">
+                <ol className="pe-3 text-muted" dir="rtl">
                   {(topCategories || []).map((item, key) => (
                     <li className="py-1" key={key}>
                       <Link to="#" className="text-muted">
                         {item.category}{" "}
-                        <span className="float-end">({item.total})</span>
+                        <span className="float-start">({item.total})</span>
                       </Link>
                     </li>
                   ))}
                 </ol>
                 <div className="mt-3 text-center">
                   <Link to="#" className="text-muted text-decoration-underline">
-                    View all Categories
+                    مشاهده همه دسته‌بندی‌ها
                   </Link>
                 </div>
               </div>
               <div className="p-3">
-                <h6 className="text-muted mb-3 text-uppercase fw-semibold fs-13">
-                  Products Reviews
+                <h6 className="text-muted mb-3 text-uppercase fw-semibold fs-13" dir="rtl">
+                  نظرات محصولات
                 </h6>
                 <ReviewSlider />
               </div>
 
               <div className="p-3">
-                <h6 className="text-muted mb-3 text-uppercase fw-semibold fs-13">
-                  Customer Reviews
+                <h6 className="text-muted mb-3 text-uppercase fw-semibold fs-13" dir="rtl">
+                  نظرات مشتریان
                 </h6>
                 <div className="bg-light px-3 py-2 rounded-2 mb-2">
                   <div className="d-flex align-items-center">
@@ -261,13 +259,13 @@ const RecentActivity = (props:any) => {
                       </div>
                     </div>
                     <div className="flex-shrink-0">
-                      <h6 className="mb-0">4.5 out of 5</h6>
+                      <h6 className="mb-0">4.5 از 5</h6>
                     </div>
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-muted">
-                    Total <span className="fw-medium">5.50k</span> reviews
+                    مجموع <span className="fw-medium">5.50k</span> نظر
                   </div>
                 </div>
 
@@ -275,7 +273,7 @@ const RecentActivity = (props:any) => {
                   <Row className="align-items-center g-2">
                     <div className="col-auto">
                       <div className="p-1">
-                        <h6 className="mb-0">5 star</h6>
+                        <h6 className="mb-0">5 ستاره</h6>
                       </div>
                     </div>
                     <div className="col">
@@ -299,7 +297,7 @@ const RecentActivity = (props:any) => {
                   <Row className="align-items-center g-2">
                     <div className="col-auto">
                       <div className="p-1">
-                        <h6 className="mb-0">4 star</h6>
+                        <h6 className="mb-0">4 ستاره</h6>
                       </div>
                     </div>
                     <div className="col">
@@ -323,7 +321,7 @@ const RecentActivity = (props:any) => {
                   <Row className="align-items-center g-2">
                     <div className="col-auto">
                       <div className="p-1">
-                        <h6 className="mb-0">3 star</h6>
+                        <h6 className="mb-0">3 ستاره</h6>
                       </div>
                     </div>
                     <div className="col">
@@ -347,7 +345,7 @@ const RecentActivity = (props:any) => {
                   <Row className="align-items-center g-2">
                     <div className="col-auto">
                       <div className="p-1">
-                        <h6 className="mb-0">2 star</h6>
+                        <h6 className="mb-0">2 ستاره</h6>
                       </div>
                     </div>
                     <div className="col">
@@ -372,7 +370,7 @@ const RecentActivity = (props:any) => {
                   <Row className="align-items-center g-2">
                     <div className="col-auto">
                       <div className="p-1">
-                        <h6 className="mb-0">1 star</h6>
+                        <h6 className="mb-0">1 ستاره</h6>
                       </div>
                     </div>
                     <div className="col">
@@ -399,16 +397,16 @@ const RecentActivity = (props:any) => {
                 <CardBody>
                   <img src={gitbox} alt="" />
                   <div className="mt-4">
-                    <h5>Invite New Seller</h5>
+                    <h5>دعوت فروشنده جدید</h5>
                     <p className="text-muted lh-base">
-                      Refer a new seller to us and earn $100 per refer.
+                      فروشنده جدیدی را به ما معرفی کنید و برای هر معرفی 100 دلار کسب کنید.
                     </p>
                     <button
                       type="button"
                       className="btn btn-primary btn-label rounded-pill"
                     >
                       <i className="ri-mail-fill label-icon align-middle rounded-pill fs-16 me-2"></i>{" "}
-                      Invite Now
+                      هم اکنون دعوت کنید
                     </button>
                   </div>
                 </CardBody>

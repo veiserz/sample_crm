@@ -34,23 +34,23 @@ const BalanceOverview = () => {
         <React.Fragment>
             <Col xxl={6}>
                 <Card className="card-height-100">
-                    <CardHeader className="align-items-center d-flex">
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
                         <h4 className="card-title mb-0 flex-grow-1">نمای کلی موجودی</h4>
                         <div className="flex-shrink-0">
                             <UncontrolledDropdown className="card-header-dropdown">
                                 <DropdownToggle className="text-reset dropdown-btn" tag="a" role="button">
-                                    <span className="fw-semibold text-uppercase fs-12">مرتب‌سازی بر اساس: </span><span className="text-muted">{seletedMonth.charAt(0).toUpperCase() + seletedMonth.slice(1)}<i className="mdi mdi-chevron-down ms-1"></i></span>
+                                    <span className="fw-semibold text-uppercase fs-12">مرتب‌سازی بر اساس: </span><span className="text-muted">{seletedMonth}<i className="mdi mdi-chevron-down ms-1"></i></span>
                                 </DropdownToggle>
-                                <DropdownMenu className="dropdown-menu-end">
+                                <DropdownMenu className="dropdown-menu-end" dir="rtl">
                                     <DropdownItem onClick={() => { onChangeChartPeriod("today"); }} className={seletedMonth === "today" ? "active" : ""}>امروز</DropdownItem>
-                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastWeek"); }} className={seletedMonth === "lastWeek" ? "active" : ""}>هفته</DropdownItem>
-                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastMonth"); }} className={seletedMonth === "lastMonth" ? "active" : ""}>ماه</DropdownItem>
-                                    <DropdownItem onClick={() => { onChangeChartPeriod("currentYear"); }} className={seletedMonth === "currentYear" ? "active" : ""}>سال</DropdownItem>
+                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastWeek"); }} className={seletedMonth === "lastWeek" ? "active" : ""}>هفته گذشته</DropdownItem>
+                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastMonth"); }} className={seletedMonth === "lastMonth" ? "active" : ""}>ماه گذشته</DropdownItem>
+                                    <DropdownItem onClick={() => { onChangeChartPeriod("currentYear"); }} className={seletedMonth === "currentYear" ? "active" : ""}>سال جاری</DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </div>
                     </CardHeader>
-                    <CardBody className="px-0">
+                    <CardBody className="px-0" dir="rtl">
                         <ul className="list-inline main-chart text-center mb-0">
                             <li className="list-inline-item chart-border-left me-0 border-0">
                                 <h4 className="text-primary">$584k <span className="text-muted d-inline-block fs-13 align-middle ms-2">درآمد</span></h4>

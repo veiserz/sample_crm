@@ -42,10 +42,10 @@ const NotificationDropdown = () => {
                         <div className="p-3">
                             <Row className="align-items-center">
                                 <Col>
-                                    <h6 className="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                    <h6 className="m-0 fs-16 fw-semibold text-white"> اعلان ها </h6>
                                 </Col>
                                 <div className="col-auto dropdown-tabs">
-                                    <span className="badge bg-light-subtle text-body fs-13"> 4 New</span>
+                                    <span className="badge bg-light-subtle text-body fs-13"> 4 جدید</span>
                                 </div>
                             </Row>
                         </div>
@@ -58,7 +58,7 @@ const NotificationDropdown = () => {
                                         className={classnames({ active: activeTab === '1' })}
                                         onClick={() => { toggleTab('1'); }}
                                     >
-                                        All (4)
+                                        همه (4)
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -67,7 +67,7 @@ const NotificationDropdown = () => {
                                         className={classnames({ active: activeTab === '2' })}
                                         onClick={() => { toggleTab('2'); }}
                                     >
-                                        Messages
+                                        پیام ها
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -76,7 +76,7 @@ const NotificationDropdown = () => {
                                         className={classnames({ active: activeTab === '3' })}
                                         onClick={() => { toggleTab('3'); }}
                                     >
-                                        Alerts
+                                        هشدار ها
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -96,12 +96,12 @@ const NotificationDropdown = () => {
                                         </div>
                                         <div className="flex-grow-1">
                                             <Link to="#" className="stretched-link">
-                                                <h6 className="mt-0 mb-2 lh-base">Your <b>Elite</b> author Graphic
-                                                    Optimization <span className="text-secondary">reward</span> is ready!
+                                                <h6 className="mt-0 mb-2 lh-base">شما <b>اکسلنت</b> نویسنده گرافیک
+                                                    Optimization <span className="text-secondary">پاداش</span> آماده است!
                                                 </h6>
                                             </Link>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 30 ثانیه پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -118,13 +118,12 @@ const NotificationDropdown = () => {
                                         <img src={avatar2}
                                             className="me-3 rounded-circle avatar-xs" alt="user-pic" />
                                         <div className="flex-grow-1">
-                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6></Link>
+                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">آنجلا برنر</h6></Link>
                                             <div className="fs-13 text-muted">
-                                                <p className="mb-1">Answered to your comment on the cash flow forecast's
-                                                    graph 🔔.</p>
+                                                <p className="mb-1">پاسخ دادن به نظر شما در مورد پیش بینی جریان نقد 🔔.</p>
                                             </div>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 48 min ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 48 دقیقه پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -146,10 +145,10 @@ const NotificationDropdown = () => {
                                         </div>
                                         <div className="flex-grow-1">
                                             <Link to="#" className="stretched-link">
-                                                <h6 className="mt-0 mb-2 fs-13 lh-base">You have received <b className="text-success">20</b> new messages in the conversation</h6>
+                                                <h6 className="mt-0 mb-2 fs-13 lh-base">شما <b className="text-success">20</b> پیام جدید در مکالمه دریافت کرده اید</h6>
                                             </Link>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 2 ساعت پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -165,12 +164,12 @@ const NotificationDropdown = () => {
                                     <div className="d-flex">
                                         <img src={avatar8} className="me-3 rounded-circle avatar-xs" alt="user-pic" />
                                         <div className="flex-grow-1">
-                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6></Link>
+                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">مورین جیبسون</h6></Link>
                                             <div className="fs-13 text-muted">
-                                                <p className="mb-1">We talked about a project on linkedin.</p>
+                                                <p className="mb-1">ما در مورد یک پروژه در لینکدین به صورت مکالمه ای صحبت کردیم.</p>
                                             </div>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 4 hrs ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 4 ساعت پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -183,8 +182,8 @@ const NotificationDropdown = () => {
                                 </div>
 
                                 <div className="my-3 text-center">
-                                    <button type="button" className="btn btn-soft-success waves-effect waves-light">View
-                                        All Notifications <i className="ri-arrow-right-line align-middle"></i></button>
+                                    <button type="button" className="btn btn-soft-success waves-effect waves-light">نمایش
+                                       همه اعلان ها <i className="ri-arrow-right-line align-middle"></i></button>
                                 </div>
                             </SimpleBar>
 
@@ -197,12 +196,12 @@ const NotificationDropdown = () => {
                                         <img src={avatar3}
                                             className="me-3 rounded-circle avatar-xs" alt="user-pic" />
                                         <div className="flex-grow-1">
-                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">James Lemire</h6></Link>
+                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">جیمز لمیر</h6></Link>
                                             <div className="fs-13 text-muted">
-                                                <p className="mb-1">We talked about a project on linkedin.</p>
+                                                <p className="mb-1">ما در مورد یک پروژه در لینکدین به صورت مکالمه ای صحبت کردیم.</p>
                                             </div>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 30 min ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 30 دقیقه پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -219,13 +218,12 @@ const NotificationDropdown = () => {
                                         <img src={avatar2}
                                             className="me-3 rounded-circle avatar-xs" alt="user-pic" />
                                         <div className="flex-grow-1">
-                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6></Link>
+                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">آنجلا برنر</h6></Link>
                                             <div className="fs-13 text-muted">
-                                                <p className="mb-1">Answered to your comment on the cash flow forecast's
-                                                    graph 🔔.</p>
+                                                <p className="mb-1">پاسخ دادن به نظر شما در مورد پیش بینی جریان نقد 🔔.</p>
                                             </div>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 2 ساعت پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -242,12 +240,12 @@ const NotificationDropdown = () => {
                                         <img src={avatar6}
                                             className="me-3 rounded-circle avatar-xs" alt="user-pic" />
                                         <div className="flex-grow-1">
-                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">Kenneth Brown</h6></Link>
+                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">کنتور براون</h6></Link>
                                             <div className="fs-13 text-muted">
-                                                <p className="mb-1">Mentionned you in his comment on 📃 invoice #12501. </p>
+                                                <p className="mb-1">شما را در نظرات خود در 📃 فاکتور #12501 ذکر کرد. </p>
                                             </div>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 10 hrs ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 10 ساعت پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -264,12 +262,12 @@ const NotificationDropdown = () => {
                                         <img src={avatar8}
                                             className="me-3 rounded-circle avatar-xs" alt="user-pic" />
                                         <div className="flex-grow-1">
-                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6></Link>
+                                            <Link to="#" className="stretched-link"><h6 className="mt-0 mb-1 fs-13 fw-semibold">مورین جیبسون</h6></Link>
                                             <div className="fs-13 text-muted">
-                                                <p className="mb-1">We talked about a project on linkedin.</p>
+                                                <p className="mb-1">ما در مورد یک پروژه در لینکدین به صورت مکالمه ای صحبت کردیم.</p>
                                             </div>
                                             <p className="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                                                <span><i className="mdi mdi-clock-outline"></i> 3 days ago</span>
+                                                <span><i className="mdi mdi-clock-outline"></i> 3 روز پیش</span>
                                             </p>
                                         </div>
                                         <div className="px-2 fs-15">
@@ -282,8 +280,8 @@ const NotificationDropdown = () => {
                                 </div>
 
                                 <div className="my-3 text-center">
-                                    <button type="button" className="btn btn-soft-success waves-effect waves-light">View
-                                        All Messages <i className="ri-arrow-right-line align-middle"></i></button>
+                                    <button type="button" className="btn btn-soft-success waves-effect waves-light">نمایش
+                                       همه پیام ها <i className="ri-arrow-right-line align-middle"></i></button>
                                 </div>
                             </SimpleBar>
                         </TabPane>
@@ -292,7 +290,7 @@ const NotificationDropdown = () => {
                                 <img src={bell} className="img-fluid" alt="user-pic" />
                             </div>
                             <div className="text-center pb-5 mt-2">
-                                <h6 className="fs-18 fw-semibold lh-base">Hey! You have no any notifications </h6>
+                                <h6 className="fs-18 fw-semibold lh-base">ایهلا! شما هیچ اعلانی ندارید </h6>
                             </div>
                         </TabPane>
                     </TabContent>

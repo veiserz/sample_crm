@@ -27,7 +27,7 @@ import smallImage9 from '../../../../assets/images/small/img-9.jpg';
 import { projects, documents } from '../../../../common/data';
 
 const SimplePage = () => {
-    document.title = "Profile | Velzon - React Admin & Dashboard Template";
+    document.title = "پروفایل | Velzon - React Admin & Dashboard Template";
 
     const [activeTab, setActiveTab] = useState('1');
     const [activityTab, setActivityTab] = useState('1');
@@ -46,7 +46,7 @@ const SimplePage = () => {
 
     return (
         <React.Fragment>
-            <div className="page-content">
+            <div className="page-content" dir="rtl">
                 <Container fluid>
                     <div className="profile-foreground position-relative mx-n4 mt-n4">
                         <div className="profile-wid-bg">
@@ -64,14 +64,14 @@ const SimplePage = () => {
 
                             <Col>
                                 <div className="p-2">
-                                    <h3 className="text-white mb-1">Anna Adame</h3>
-                                    <p className="text-white text-opacity-75">Owner & Founder</p>
+                                    <h3 className="text-white mb-1">آنا آدام</h3>
+                                    <p className="text-white text-opacity-75">مالک و بنیانگذار</p>
                                     <div className="hstack text-white-50 gap-1">
-                                        <div className="me-2"><i
-                                            className="ri-map-pin-user-line me-1 text-white text-opacity-75 fs-16 align-middle"></i>California,
-                                            United States</div>
+                                        <div className="ms-2"><i
+                                            className="ri-map-pin-user-line ms-1 text-white text-opacity-75 fs-16 align-middle"></i>کالیفرنیا،
+                                            ایالات متحده</div>
                                         <div><i
-                                            className="ri-building-line me-1 text-white text-opacity-75 fs-16 align-middle"></i>Themesbrand
+                                            className="ri-building-line ms-1 text-white text-opacity-75 fs-16 align-middle"></i>تمزبرند
                                         </div>
                                     </div>
                                 </div>
@@ -82,13 +82,13 @@ const SimplePage = () => {
                                     <Col lg={6} xs={4}>
                                         <div className="p-2">
                                             <h4 className="text-white mb-1">24.3K</h4>
-                                            <p className="fs-14 mb-0">Followers</p>
+                                            <p className="fs-14 mb-0">دنبال‌کنندگان</p>
                                         </div>
                                     </Col>
                                     <Col lg={6} xs={4}>
                                         <div className="p-2">
                                             <h4 className="text-white mb-1">1.3K</h4>
-                                            <p className="fs-14 mb-0">Following</p>
+                                            <p className="fs-14 mb-0">دنبال‌شده</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -109,7 +109,7 @@ const SimplePage = () => {
                                                 onClick={() => { toggleTab('1'); }}
                                             >
                                                 <i className="ri-airplay-fill d-inline-block d-md-none"></i> <span
-                                                    className="d-none d-md-inline-block">Overview</span>
+                                                    className="d-none d-md-inline-block">نمای کلی</span>
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
@@ -119,7 +119,7 @@ const SimplePage = () => {
                                                 onClick={() => { toggleTab('2'); }}
                                             >
                                                 <i className="ri-list-unordered d-inline-block d-md-none"></i> <span
-                                                    className="d-none d-md-inline-block">Activities</span>
+                                                    className="d-none d-md-inline-block">فعالیت‌ها</span>
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
@@ -129,7 +129,7 @@ const SimplePage = () => {
                                                 onClick={() => { toggleTab('3'); }}
                                             >
                                                 <i className="ri-price-tag-line d-inline-block d-md-none"></i> <span
-                                                    className="d-none d-md-inline-block">Projects</span>
+                                                    className="d-none d-md-inline-block">پروژه‌ها</span>
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
@@ -139,13 +139,13 @@ const SimplePage = () => {
                                                 onClick={() => { toggleTab('4'); }}
                                             >
                                                 <i className="ri-folder-4-line d-inline-block d-md-none"></i> <span
-                                                    className="d-none d-md-inline-block">Documents</span>
+                                                    className="d-none d-md-inline-block">اسناد</span>
                                             </NavLink>
                                         </NavItem>
                                     </Nav>
                                     <div className="flex-shrink-0">
                                         <Link to="/pages-profile-settings" className="btn btn-success"><i
-                                            className="ri-edit-box-line align-bottom"></i> Edit Profile</Link>
+                                            className="ri-edit-box-line align-bottom"></i> ویرایش پروفایل</Link>
                                     </div>
                                 </div>
 
@@ -155,37 +155,37 @@ const SimplePage = () => {
                                             <Col xxl={3}>
                                                 <Card>
                                                     <CardBody>
-                                                        <h5 className="card-title mb-5">Complete Your Profile</h5>
+                                                        <h5 className="card-title mb-5">پروفایل خود را تکمیل کنید</h5>
                                                         <Progress value={30} color="danger" className="animated-progess custom-progress progress-label" ><div className="label">30%</div> </Progress>
                                                     </CardBody>
                                                 </Card>
 
                                                 <Card>
                                                     <CardBody>
-                                                        <h5 className="card-title mb-3">Info</h5>
+                                                        <h5 className="card-title mb-3">اطلاعات</h5>
                                                         <div className="table-responsive">
                                                             <Table className="table-borderless mb-0">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th className="ps-0" scope="row">Full Name :</th>
-                                                                        <td className="text-muted">Anna Adame</td>
+                                                                        <th className="pe-0" scope="row">نام کامل :</th>
+                                                                        <td className="text-muted">آنا آدام</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th className="ps-0" scope="row">Mobile :</th>
+                                                                        <th className="pe-0" scope="row">موبایل :</th>
                                                                         <td className="text-muted">+(1) 987 6543</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th className="ps-0" scope="row">E-mail :</th>
+                                                                        <th className="pe-0" scope="row">ایمیل :</th>
                                                                         <td className="text-muted">daveadame@velzon.com</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th className="ps-0" scope="row">Location :</th>
-                                                                        <td className="text-muted">California, United States
+                                                                        <th className="pe-0" scope="row">مکان :</th>
+                                                                        <td className="text-muted">کالیفرنیا، ایالات متحده
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th className="ps-0" scope="row">Joining Date</th>
-                                                                        <td className="text-muted">24 Nov 2021</td>
+                                                                        <th className="pe-0" scope="row">تاریخ عضویت</th>
+                                                                        <td className="text-muted">24 نوامبر 2021</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </Table>
@@ -195,7 +195,7 @@ const SimplePage = () => {
 
                                                 <Card>
                                                     <CardBody>
-                                                        <h5 className="card-title mb-4">Portfolio</h5>
+                                                        <h5 className="card-title mb-4">نمونه کارها</h5>
                                                         <div className="d-flex flex-wrap gap-2">
                                                             <div>
                                                                 <Link to="#" className="avatar-xs d-block">
@@ -235,7 +235,7 @@ const SimplePage = () => {
 
                                                 <Card>
                                                     <CardBody>
-                                                        <h5 className="card-title mb-4">Skills</h5>
+                                                        <h5 className="card-title mb-4">مهارت‌ها</h5>
                                                         <div className="d-flex flex-wrap gap-2 fs-16">
                                                             <Link to="#"
                                                                 className="badge bg-primary-subtle text-primary">Photoshop</Link>
@@ -259,7 +259,7 @@ const SimplePage = () => {
                                                     <CardBody>
                                                         <div className="d-flex align-items-center mb-4">
                                                             <div className="flex-grow-1">
-                                                                <h5 className="card-title mb-0">Suggestions</h5>
+                                                                <h5 className="card-title mb-0">پیشنهادات</h5>
                                                             </div>
                                                             <div className="flex-shrink-0">
 
@@ -268,9 +268,9 @@ const SimplePage = () => {
                                                                         <i className="ri-more-2-fill fs-14"></i>
                                                                     </DropdownToggle>
                                                                     <DropdownMenu>
-                                                                        <DropdownItem>View</DropdownItem>
-                                                                        <DropdownItem>Edit</DropdownItem>
-                                                                        <DropdownItem>Delete</DropdownItem>
+                                                                        <DropdownItem>مشاهده</DropdownItem>
+                                                                        <DropdownItem>ویرایش</DropdownItem>
+                                                                        <DropdownItem>حذف</DropdownItem>
                                                                     </DropdownMenu>
                                                                 </UncontrolledDropdown>
 
@@ -284,9 +284,8 @@ const SimplePage = () => {
                                                                 </div>
                                                                 <div className="flex-grow-1">
                                                                     <div>
-                                                                        <h5 className="fs-15 mb-1">Esther James</h5>
-                                                                        <p className="fs-14 text-muted mb-0">Frontend
-                                                                            Developer</p>
+                                                                        <h5 className="fs-15 mb-1">استر جیمز</h5>
+                                                                        <p className="fs-14 text-muted mb-0">توسعه‌دهنده فرانت‌اند</p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="flex-shrink-0 ms-2">
@@ -302,8 +301,8 @@ const SimplePage = () => {
                                                                 </div>
                                                                 <div className="flex-grow-1">
                                                                     <div>
-                                                                        <h5 className="fs-15 mb-1">Jacqueline Steve</h5>
-                                                                        <p className="fs-14 text-muted mb-0">UI/UX Designer
+                                                                        <h5 className="fs-15 mb-1">ژاکلین استیو</h5>
+                                                                        <p className="fs-14 text-muted mb-0">طراح رابط کاربری
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -320,9 +319,9 @@ const SimplePage = () => {
                                                                 </div>
                                                                 <div className="flex-grow-1">
                                                                     <div>
-                                                                        <h5 className="fs-15 mb-1">George Whalen</h5>
-                                                                        <p className="fs-14 text-muted mb-0">Backend
-                                                                            Developer</p>
+                                                                        <h5 className="fs-15 mb-1">جورج ویلن</h5>
+                                                                        <p className="fs-14 text-muted mb-0">توسعه‌دهنده بک‌اند
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="flex-shrink-0 ms-2">
@@ -340,7 +339,7 @@ const SimplePage = () => {
                                                     <CardBody>
                                                         <div className="d-flex align-items-center mb-4">
                                                             <div className="flex-grow-1">
-                                                                <h5 className="card-title mb-0">Popular Posts</h5>
+                                                                <h5 className="card-title mb-0">پست‌های محبوب</h5>
                                                             </div>
                                                             <div className="flex-shrink-0">
                                                                 <UncontrolledDropdown direction='start'>
@@ -348,9 +347,9 @@ const SimplePage = () => {
                                                                         <i className="ri-more-2-fill fs-14"></i>
                                                                     </DropdownToggle>
                                                                     <DropdownMenu>
-                                                                        <DropdownItem>View</DropdownItem>
-                                                                        <DropdownItem>Edit</DropdownItem>
-                                                                        <DropdownItem>Delete</DropdownItem>
+                                                                        <DropdownItem>مشاهده</DropdownItem>
+                                                                        <DropdownItem>ویرایش</DropdownItem>
+                                                                        <DropdownItem>حذف</DropdownItem>
                                                                     </DropdownMenu>
                                                                 </UncontrolledDropdown>
                                                             </div>
@@ -360,12 +359,11 @@ const SimplePage = () => {
                                                                 <img src={smallImage4} alt=""
                                                                     height="50" className="rounded" />
                                                             </div>
-                                                            <div className="flex-grow-1 ms-3 overflow-hidden">
+                                                            <div className="flex-grow-1 me-3 overflow-hidden">
                                                                 <Link to="#">
-                                                                    <h6 className="text-truncate">Design your apps in
-                                                                        your own way</h6>
+                                                                    <h6 className="text-truncate">اپلیکیشن‌های خود را به روش خودتان طراحی کنید</h6>
                                                                 </Link>
-                                                                <p className="text-muted mb-0 fs-13">15 Dec 2021</p>
+                                                                <p className="text-muted mb-0 fs-13">15 دسامبر 2021</p>
                                                             </div>
                                                         </div>
                                                         <div className="d-flex mb-4">
@@ -373,12 +371,11 @@ const SimplePage = () => {
                                                                 <img src={smallImage5} alt=""
                                                                     height="50" className="rounded" />
                                                             </div>
-                                                            <div className="flex-grow-1 ms-3 overflow-hidden">
+                                                            <div className="flex-grow-1 me-3 overflow-hidden">
                                                                 <Link to="#">
-                                                                    <h6 className="text-truncate">Smartest
-                                                                        Applications for Business</h6>
+                                                                    <h6 className="text-truncate">هوشمندترین اپلیکیشن‌ها برای کسب‌وکار</h6>
                                                                 </Link>
-                                                                <p className="text-muted mb-0 fs-13">28 Nov 2021</p>
+                                                                <p className="text-muted mb-0 fs-13">28 نوامبر 2021</p>
                                                             </div>
                                                         </div>
                                                         <div className="d-flex">
@@ -386,12 +383,11 @@ const SimplePage = () => {
                                                                 <img src={smallImage6} alt=""
                                                                     height="50" className="rounded" />
                                                             </div>
-                                                            <div className="flex-grow-1 ms-3 overflow-hidden">
+                                                            <div className="flex-grow-1 me-3 overflow-hidden">
                                                                 <Link to="#">
-                                                                    <h6 className="text-truncate">How to get creative
-                                                                        in your work</h6>
+                                                                    <h6 className="text-truncate">چگونه در کار خود خلاق باشید</h6>
                                                                 </Link>
-                                                                <p className="text-muted mb-0 fs-13">21 Nov 2021</p>
+                                                                <p className="text-muted mb-0 fs-13">21 نوامبر 2021</p>
                                                             </div>
                                                         </div>
                                                     </CardBody>
@@ -400,20 +396,9 @@ const SimplePage = () => {
                                             <Col xxl={9}>
                                                 <Card>
                                                     <CardBody>
-                                                        <h5 className="card-title mb-3">About</h5>
-                                                        <p>Hi I'm Anna Adame, It will be as simple as Occidental; in
-                                                            fact, it will be Occidental. To an English person, it will
-                                                            seem like simplified English, as a skeptical Cambridge
-                                                            friend of mine told me what Occidental is European languages
-                                                            are members of the same family.</p>
-                                                        <p>You always want to make sure that your fonts work well
-                                                            together and try to limit the number of fonts you use to
-                                                            three or less. Experiment and play around with the fonts
-                                                            that you already have in the software you’re working with
-                                                            reputable font websites. This may be the most commonly
-                                                            encountered tip I received from the designers I spoke with.
-                                                            They highly encourage that you use different fonts in one
-                                                            design, but do not over-exaggerate and go overboard.</p>
+                                                        <h5 className="card-title mb-3">درباره</h5>
+                                                        <p>سلام، من آنا آدام هستم. این به سادگی زبان لاتین خواهد بود؛ در واقع، این زبان لاتین خواهد بود. برای یک فرد انگلیسی، این شبیه انگلیسی ساده‌شده خواهد بود، همانطور که یکی از دوستان شکاک کمبریج من به من گفت که زبان لاتین چیست. زبان‌های اروپایی اعضای یک خانواده هستند.</p>
+                                                        <p>شما همیشه می‌خواهید مطمئن شوید که فونت‌های شما به خوبی با هم کار می‌کنند و سعی کنید تعداد فونت‌هایی که استفاده می‌کنید را به سه یا کمتر محدود کنید. آزمایش کنید و با فونت‌هایی که قبلاً در نرم‌افزاری که با آن کار می‌کنید دارید بازی کنید. این ممکن است رایج‌ترین نکته‌ای باشد که از طراحانی که با آن‌ها صحبت کردم دریافت کردم. آن‌ها بسیار تشویق می‌کنند که از فونت‌های مختلف در یک طراحی استفاده کنید، اما اغراق نکنید و زیاده‌روی نکنید.</p>
                                                         <Row>
                                                             <Col xs={6} md={4}>
                                                                 <div className="d-flex mt-4">
@@ -425,9 +410,9 @@ const SimplePage = () => {
                                                                         </div>
                                                                     </div>
                                                                     <div className="flex-grow-1 overflow-hidden">
-                                                                        <p className="mb-1">Designation :</p>
-                                                                        <h6 className="text-truncate mb-0">Lead Designer /
-                                                                            Developer</h6>
+                                                                        <p className="mb-1">سمت :</p>
+                                                                        <h6 className="text-truncate mb-0">طراح ارشد /
+                                                                            توسعه‌دهنده</h6>
                                                                     </div>
                                                                 </div>
                                                             </Col>
@@ -442,7 +427,7 @@ const SimplePage = () => {
                                                                         </div>
                                                                     </div>
                                                                     <div className="flex-grow-1 overflow-hidden">
-                                                                        <p className="mb-1">Website :</p>
+                                                                        <p className="mb-1">وب‌سایت :</p>
                                                                         <Link to="#" className="fw-semibold">www.velzon.com</Link>
                                                                     </div>
                                                                 </div>
@@ -455,7 +440,7 @@ const SimplePage = () => {
                                                     <Col lg={12}>
                                                         <Card>
                                                             <CardHeader className="align-items-center d-flex">
-                                                                <h4 className="card-title mb-0  me-2">Recent Activity</h4>
+                                                                <h4 className="card-title mb-0  me-2">فعالیت‌های اخیر</h4>
                                                                 <div className="flex-shrink-0 ms-auto">
                                                                     <Nav className="justify-content-end nav-tabs-custom rounded card-header-tabs border-bottom-0"
                                                                         role="tablist">
@@ -465,7 +450,7 @@ const SimplePage = () => {
                                                                                 className={classnames({ active: activityTab === '1' })}
                                                                                 onClick={() => { toggleActivityTab('1'); }}
                                                                             >
-                                                                                Today
+                                                                                امروز
                                                                             </NavLink>
                                                                         </NavItem>
                                                                         <NavItem>
@@ -474,7 +459,7 @@ const SimplePage = () => {
                                                                                 className={classnames({ active: activityTab === '2' })}
                                                                                 onClick={() => { toggleActivityTab('2'); }}
                                                                             >
-                                                                                Weekly
+                                                                                هفتگی
                                                                             </NavLink>
                                                                         </NavItem>
                                                                         <NavItem className="nav-item">
@@ -483,7 +468,7 @@ const SimplePage = () => {
                                                                                 className={classnames({ active: activityTab === '3' })}
                                                                                 onClick={() => { toggleActivityTab('3'); }}
                                                                             >
-                                                                                Monthly
+                                                                                ماهانه
                                                                             </NavLink>
                                                                         </NavItem>
                                                                     </Nav>
@@ -1356,7 +1341,7 @@ const SimplePage = () => {
 
                                                 <Card>
                                                     <CardBody>
-                                                        <h5 className="card-title">Projects</h5>
+                                                        <h5 className="card-title">پروژه‌ها</h5>
                                                         <div className="d-flex justify-content-end gap-2 mb-2">
                                                             <div className="slider-button-prev">
                                                                 <div className="avatar-title fs-18 rounded px-1">
@@ -1388,11 +1373,10 @@ const SimplePage = () => {
                                                                                     <h5
                                                                                         className="fs-15 text-truncate mb-1">
                                                                                         <Link to="#"
-                                                                                            className="text-body">ABC
-                                                                                            Project Customization</Link>
+                                                                                            className="text-body">سفارشی‌سازی پروژه ABC</Link>
                                                                                     </h5>
                                                                                     <p className="text-muted text-truncate mb-0">
-                                                                                        Last Update : <span className="fw-semibold text-body">4 hr Ago</span></p>
+                                                                                        آخرین بروزرسانی : <span className="fw-semibold text-body">4 ساعت پیش</span></p>
                                                                                 </div>
                                                                                 <div className="flex-shrink-0 ms-2">
                                                                                     <div className="badge bg-warning-subtle text-warning fs-11">
@@ -1405,7 +1389,7 @@ const SimplePage = () => {
                                                                                         className="d-flex align-items-center gap-2">
                                                                                         <div>
                                                                                             <h5 className="fs-12 text-muted mb-0">
-                                                                                                Members :</h5>
+                                                                                                اعضا :</h5>
                                                                                         </div>
                                                                                         <div className="avatar-group">
                                                                                             <div
@@ -1681,7 +1665,7 @@ const SimplePage = () => {
                                     <TabPane tabId="2">
                                         <Card>
                                             <CardBody>
-                                                <h5 className="card-title mb-3">Activities</h5>
+                                                <h5 className="card-title mb-3">فعالیت‌ها</h5>
                                                 <div className="acitivity-timeline">
                                                     <div className="acitivity-item d-flex">
                                                         <div className="flex-shrink-0">
@@ -1930,11 +1914,11 @@ const SimplePage = () => {
                                         <Card>
                                             <CardBody>
                                                 <div className="d-flex align-items-center mb-4">
-                                                    <h5 className="card-title flex-grow-1 mb-0">Documents</h5>
+                                                    <h5 className="card-title flex-grow-1 mb-0">اسناد</h5>
                                                     <div className="flex-shrink-0">
                                                         <Input className="form-control d-none" type="file" id="formFile" />
-                                                        <Label htmlFor="formFile" className="btn btn-danger"><i className="ri-upload-2-fill me-1 align-bottom"></i> Upload
-                                                            File</Label>
+                                                        <Label htmlFor="formFile" className="btn btn-danger"><i className="ri-upload-2-fill me-1 align-bottom"></i> آپلود
+                                                            فایل</Label>
                                                     </div>
                                                 </div>
                                                 <Row>
@@ -1943,11 +1927,11 @@ const SimplePage = () => {
                                                             <Table className="table-borderless align-middle mb-0">
                                                                 <thead className="table-light">
                                                                     <tr>
-                                                                        <th scope="col">File Name</th>
-                                                                        <th scope="col">Type</th>
-                                                                        <th scope="col">Size</th>
-                                                                        <th scope="col">Upload Date</th>
-                                                                        <th scope="col">Action</th>
+                                                                        <th scope="col">نام فایل</th>
+                                                                        <th scope="col">نوع</th>
+                                                                        <th scope="col">اندازه</th>
+                                                                        <th scope="col">تاریخ آپلود</th>
+                                                                        <th scope="col">عملیات</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -1976,10 +1960,10 @@ const SimplePage = () => {
                                                                                         <i className="ri-equalizer-fill"></i>
                                                                                     </DropdownToggle>
                                                                                     <DropdownMenu>
-                                                                                        <DropdownItem><i className="ri-eye-fill me-2 align-middle text-muted" />View</DropdownItem>
-                                                                                        <DropdownItem><i className="ri-download-2-fill me-2 align-middle text-muted" />Download</DropdownItem>
+                                                                                        <DropdownItem><i className="ri-eye-fill me-2 align-middle text-muted" />مشاهده</DropdownItem>
+                                                                                        <DropdownItem><i className="ri-download-2-fill me-2 align-middle text-muted" />دانلود</DropdownItem>
                                                                                         <DropdownItem divider />
-                                                                                        <DropdownItem><i className="ri-delete-bin-5-line me-2 align-middle text-muted" />Delete</DropdownItem>
+                                                                                        <DropdownItem><i className="ri-delete-bin-5-line me-2 align-middle text-muted" />حذف</DropdownItem>
                                                                                     </DropdownMenu>
                                                                                 </UncontrolledDropdown>
                                                                             </td>
@@ -1991,7 +1975,7 @@ const SimplePage = () => {
                                                         <div className="text-center mt-3">
                                                             <Link to="#" className="text-success "><i
                                                                 className="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></i>
-                                                                Load more </Link>
+                                                                بارگذاری بیشتر </Link>
                                                         </div>
                                                     </Col>
                                                 </Row>

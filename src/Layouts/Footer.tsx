@@ -1,20 +1,14 @@
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 
 const Footer = () => {
     return (
         <React.Fragment>
-            <footer className="footer">
+            <footer className="footer" style={{direction: "rtl" , textAlign: "center"}}>
                 <Container fluid>
                     <Row>
-                        <Col sm={6}>
-                            {new Date().getFullYear()} © CRM همیار.
-                        </Col>
-                        <Col sm={6}>
-                            <div className="text-sm-end d-none d-sm-block">
-                                طراحی شده توسط تیم crm همیار
-                            </div>
-                        </Col>
+                            <div className="text-sm-start d-none d-sm-block" >
+طراحی شده توسط همیار CRM                            </div>
                     </Row>
                 </Container>
             </footer>

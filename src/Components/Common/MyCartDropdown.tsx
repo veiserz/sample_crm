@@ -14,11 +14,11 @@ import image5 from "../../assets/images/products/img-5.png";
 
 const MyCartDropdown = () => {
     const cartData = [
-        { id: 1, img: image1, product: "Branded T-Shirts", quantity: 10, price: 32 },
-        { id: 2, img: image2, product: "Bentwood Chair", quantity: 5, price: 18 },
-        { id: 3, img: image3, product: "Borosil Paper Cup", quantity: 3, price: 250 },
-        { id: 4, img: image6, product: "Gray Styled T-Shirt", quantity: 1, price: 1250 },
-        { id: 5, img: image5, product: "Stillbird Helmet", quantity: 2, price: 495 },
+        { id: 1, img: image1, product: "تی‌شرت برند", quantity: 10, price: 32 },
+        { id: 2, img: image2, product: "صندلی چوبی", quantity: 5, price: 18 },
+        { id: 3, img: image3, product: "لیوان کاغذی بروسیل", quantity: 3, price: 250 },
+        { id: 4, img: image6, product: "تی‌شرت خاکستری", quantity: 1, price: 1250 },
+        { id: 5, img: image5, product: "کلاه ایمنی استیلبرد", quantity: 2, price: 495 },
     ];
 
     const [isCartDropdown, setIsCartDropdown] = useState(false);
@@ -66,14 +66,14 @@ const MyCartDropdown = () => {
                             className="visually-hidden">unread messages</span></span>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-xl dropdown-menu-end p-0"
-                    aria-labelledby="page-header-cart-dropdown">
+                    aria-labelledby="page-header-cart-dropdown" dir="rtl">
                     <div className="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
                         <Row className="align-items-center">
                             <Col>
-                                <h6 className="m-0 fs-16 fw-semibold"> My Cart</h6>
+                                <h6 className="m-0 fs-16 fw-semibold"> سبد خرید من</h6>
                             </Col>
                             <div className="col-auto">
-                                <span className="badge bg-warning-subtle text-warning fs-13"> <span className="cartitem-badge"> {cartItem} </span> items</span>
+                                <span className="badge bg-warning-subtle text-warning fs-13"> <span className="cartitem-badge"> {cartItem} </span> آیتم</span>
                             </div>
                         </Row>
                     </div>
@@ -85,42 +85,42 @@ const MyCartDropdown = () => {
                                         <i className='bx bx-cart'></i>
                                     </div>
                                 </div>
-                                <h5 className="mb-3">Your Cart is Empty!</h5>
-                                <Link to="/apps-ecommerce-products" className="btn btn-success w-md mb-3">Shop Now</Link>
+                                <h5 className="mb-3">سبد خرید شما خالی است!</h5>
+                                <Link to="/apps-ecommerce-products" className="btn btn-success w-md mb-3">هم اکنون خرید کنید</Link>
                             </div>
                             {cartData.map((item, key) => (<div className="d-block dropdown-item dropdown-item-cart text-wrap px-3 py-2" key={key}>
                                 <div className="d-flex align-items-center">
-                                    <img src={item.img}
-                                        className="me-3 rounded-circle avatar-sm p-2 bg-light" alt="user-pic" />
+                                    <div className="ps-2">
+                                        <button type="button" className="btn btn-icon btn-sm btn-ghost-secondary remove-item-btn" onClick={(e: any) => { removeItem(e.target); }}><i
+                                            className="ri-close-fill fs-16"></i></button>
+                                    </div>
+                                    <div className="px-2">
+                                        <h5 className="m-0 fw-normal">$<span className="cart-item-price">{item.quantity * item.price}</span></h5>
+                                    </div>
                                     <div className="flex-grow-1">
                                         <h6 className="mt-0 mb-1 fs-14">
                                             <Link to="/apps-ecommerce-product-details" className="text-reset">{item.product}</Link>
                                         </h6>
                                         <p className="mb-0 fs-12 text-muted">
-                                            Quantity: <span>{item.quantity} x ${item.price}</span>
+                                            تعداد: <span>{item.quantity} x ${item.price}</span>
                                         </p>
                                     </div>
-                                    <div className="px-2">
-                                        <h5 className="m-0 fw-normal">$<span className="cart-item-price">{item.quantity * item.price}</span></h5>
-                                    </div>
-                                    <div className="ps-2">
-                                        <button type="button" className="btn btn-icon btn-sm btn-ghost-secondary remove-item-btn" onClick={(e: any) => { removeItem(e.target); }}><i
-                                            className="ri-close-fill fs-16"></i></button>
-                                    </div>
+                                    <img src={item.img}
+                                        className="ms-3 rounded-circle avatar-sm p-2 bg-light" alt="user-pic" />
                                 </div>
                             </div>))}
                         </div>
                     </SimpleBar>
                     <div className="p-3 border-bottom-0 border-start-0 border-end-0 border-dashed border" id="checkout-elem">
                         <div className="d-flex justify-content-between align-items-center pb-3">
-                            <h5 className="m-0 text-muted">Total:</h5>
+                            <h5 className="m-0 text-muted">مجموع:</h5>
                             <div className="px-2">
                                 <h5 className="m-0">$<span id="cart-item-total">3400</span></h5>
                             </div>
                         </div>
 
                         <Link to="/apps-ecommerce-checkout" className="btn btn-success text-center w-100">
-                            Checkout
+                            تسویه حساب
                         </Link>
                     </div>
                 </DropdownMenu>

@@ -41,18 +41,18 @@ const UsersByDevice = () => {
         <React.Fragment>
             <Col xl={4}>
                 <Card className="card-height-100">
-                    <CardHeader className="align-items-center d-flex">
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
                         <h4 className="card-title mb-0 flex-grow-1">کاربران بر اساس دستگاه</h4>
                         <div className="flex-shrink-0">
                             <Dropdown className="card-header-dropdown" isOpen={isUserDropdown} toggle={toggleDropdown} direction="start">
                                 <DropdownToggle tag="a" className="text-reset dropdown-btn" role="button">
                                     <span className="text-muted fs-16"><i className="mdi mdi-dots-vertical align-middle"></i></span>
                                 </DropdownToggle>
-                                <DropdownMenu className="dropdown-menu-end" >
+                                <DropdownMenu className="dropdown-menu-end" dir="rtl">
                                     <DropdownItem onClick={() => { onChangeChartPeriod("today"); }} className={seletedMonth === "today" ? "active" : ""}>امروز</DropdownItem>
-                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastWeek"); }} className={seletedMonth === "lastWeek" ? "active" : ""}>گذشته هفته</DropdownItem>
-                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastMonth"); }} className={seletedMonth === "lastMonth" ? "active" : ""}>گذشته ماه</DropdownItem>
-                                    <DropdownItem onClick={() => { onChangeChartPeriod("currentYear"); }} className={seletedMonth === "currentYear" ? "active" : ""}>گذشته سال</DropdownItem>
+                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastWeek"); }} className={seletedMonth === "lastWeek" ? "active" : ""}>هفته گذشته</DropdownItem>
+                                    <DropdownItem onClick={() => { onChangeChartPeriod("lastMonth"); }} className={seletedMonth === "lastMonth" ? "active" : ""}>ماه گذشته</DropdownItem>
+                                    <DropdownItem onClick={() => { onChangeChartPeriod("currentYear"); }} className={seletedMonth === "currentYear" ? "active" : ""}>سال گذشته</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
                         </div>
@@ -62,35 +62,35 @@ const UsersByDevice = () => {
                             <UsersByDeviceCharts series={chartData} dataColors='["--vz-primary", "--vz-warning", "--vz-info"]' />
                         </div>
 
-                        <div className="table-responsive mt-3">
+                        <div className="table-responsive mt-3" dir="rtl">
                             <table className="table table-borderless table-sm table-centered align-middle table-nowrap mb-0">
                                 <tbody className="border-0">
                                     <tr>
-                                        <td><h4 className="text-truncate fs-14 fs-medium mb-0"><i className="ri-stop-fill align-middle fs-18 text-primary me-2"></i>کاربران رومیزی</h4></td>
+                                        <td><h4 className="text-truncate fs-14 fs-medium mb-0"><i className="ri-stop-fill align-middle fs-18 text-primary ms-2"></i>کاربران دسکتاپ</h4></td>
                                         <td><p className="text-muted mb-0">
                                             <FeatherIcon
                                                 icon="users"
-                                                className="me-2 icon-sm"
+                                                className="ms-2 icon-sm"
                                             />
                                             {chartData[0]}k</p></td>
                                         <td className="text-end"><p className="text-success fw-medium fs-13 mb-0"><i className="ri-arrow-up-s-fill fs-5 align-middle"></i>2.08%</p></td>
                                     </tr>
                                     <tr>
-                                        <td><h4 className="text-truncate fs-14 fs-medium mb-0"><i className="ri-stop-fill align-middle fs-18 text-warning me-2"></i>کاربران موبایل</h4></td>
+                                        <td><h4 className="text-truncate fs-14 fs-medium mb-0"><i className="ri-stop-fill align-middle fs-18 text-warning ms-2"></i>کاربران موبایل</h4></td>
                                         <td><p className="text-muted mb-0">
                                             <FeatherIcon
                                                 icon="users"
-                                                className="me-2 icon-sm"
+                                                className="ms-2 icon-sm"
                                             />
                                             {chartData[1]}k</p></td>
                                         <td className="text-end"><p className="text-danger fw-medium fs-13 mb-0"><i className="ri-arrow-down-s-fill fs-5 align-middle"></i>10.52%</p></td>
                                     </tr>
                                     <tr>
-                                        <td><h4 className="text-truncate fs-14 fs-medium mb-0"><i className="ri-stop-fill align-middle fs-18 text-info me-2"></i>کاربران تبلت</h4></td>
+                                        <td><h4 className="text-truncate fs-14 fs-medium mb-0"><i className="ri-stop-fill align-middle fs-18 text-info ms-2"></i>کاربران تبلت</h4></td>
                                         <td><p className="text-muted mb-0">
                                             <FeatherIcon
                                                 icon="users"
-                                                className="me-2 icon-sm"
+                                                className="ms-2 icon-sm"
                                             />
                                             {chartData[2]}k</p></td>
                                         <td className="text-end"><p className="text-danger fw-medium fs-13 mb-0"><i className="ri-arrow-down-s-fill fs-5 align-middle"></i>7.36%</p></td>

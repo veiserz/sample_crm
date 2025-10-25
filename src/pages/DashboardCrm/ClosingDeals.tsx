@@ -8,26 +8,26 @@ const ClosingDeals = () => {
         <React.Fragment>
             <Col xxl={7}>
                 <Card className="card-height-100">
-                    <CardHeader className="align-items-center d-flex">
-                        <h4 className="card-title mb-0 flex-grow-1">Closing Deals</h4>
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
+                        <h4 className="card-title mb-0 flex-grow-1">معاملات در حال بسته شدن</h4>
                         <div className="flex-shrink-0">
                             <select className="form-select form-select-sm">
-                                <option defaultValue="">Closed Deals</option>
-                                <option value="1">Active Deals</option>
-                                <option value="2">Paused Deals</option>
-                                <option value="3">Canceled Deals</option>
+                                <option defaultValue="">معاملات بسته شده</option>
+                                <option value="1">معاملات فعال</option>
+                                <option value="2">معاملات متوقف</option>
+                                <option value="3">معاملات لغو شده</option>
                             </select>
                         </div>
                     </CardHeader>
-                    <CardBody>
+                    <CardBody dir="rtl">
                         <div className="table-responsive">
                             <table className="table table-bordered table-nowrap align-middle mb-0">
                                 <thead>
                                     <tr>
-                                        <th scope="col" style={{ width: "30%" }}>Deal Name</th>
-                                        <th scope="col" style={{ width: "30%" }}>Sales Rep</th>
-                                        <th scope="col" style={{ width: "20%" }}>Amount</th>
-                                        <th scope="col" style={{ width: "20%" }}>Close Date</th>
+                                        <th scope="col" style={{ width: "30%" }}>نام معامله</th>
+                                        <th scope="col" style={{ width: "30%" }}>نماینده فروش</th>
+                                        <th scope="col" style={{ width: "20%" }}>مبلغ</th>
+                                        <th scope="col" style={{ width: "20%" }}>تاریخ بسته شدن</th>
                                     </tr>
                                 </thead>
 
@@ -35,7 +35,7 @@ const ClosingDeals = () => {
                                     {(closingDeals || []).map((item, key) => (
                                         <tr key={key}>
                                             <td>{item.dealName}</td>
-                                            <td><img src={item.img} alt="" className="avatar-xs rounded-circle me-2" />{" "}
+                                            <td><img src={item.img} alt="" className="avatar-xs rounded-circle ms-2" />{" "}
                                                 <Link to="#" className="text-body fw-medium">{item.salesRep}</Link></td>
                                             <td>${item.amount}k</td>
                                             <td>{item.closeDate}</td>

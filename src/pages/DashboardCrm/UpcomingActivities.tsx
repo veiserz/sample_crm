@@ -8,24 +8,24 @@ const UpcomingActivities = () => {
         <React.Fragment>
             <Col xxl={5}>
                 <Card>
-                    <CardHeader className="align-items-center d-flex">
-                        <h4 className="card-title mb-0 flex-grow-1">Upcoming Activities</h4>
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
+                        <h4 className="card-title mb-0 flex-grow-1">فعالیت‌های آینده</h4>
                         <div className="flex-shrink-0">
                             <UncontrolledDropdown className="card-header-dropdown" direction="start">
                                 <DropdownToggle className="text-reset dropdown-btn" tag="a" role="button">
                                     <span className="text-muted fs-18"><i className="mdi mdi-dots-vertical"></i></span>
                                 </DropdownToggle>
-                                <DropdownMenu className="dropdown-menu dropdown-menu-end">
-                                    <DropdownItem>Edit</DropdownItem>
-                                    <DropdownItem>Remove</DropdownItem>
+                                <DropdownMenu className="dropdown-menu dropdown-menu-end" dir="rtl">
+                                    <DropdownItem>ویرایش</DropdownItem>
+                                    <DropdownItem>حذف</DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </div>
                     </CardHeader>
-                    <CardBody className="card-body pt-0">
+                    <CardBody className="card-body pt-0" dir="rtl">
                         <ul className="list-group list-group-flush border-dashed">
                             {(activities || []).map((item, key) => (
-                                <li className="list-group-item ps-0" key={key}>
+                                <li className="list-group-item pe-0" key={key}>
                                     <Row className="align-items-center g-3">
                                         <div className="col-auto">
                                             <div className="avatar-sm p-1 py-2 h-auto bg-light rounded-3">
@@ -65,15 +65,15 @@ const UpcomingActivities = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className="align-items-center mt-2 row g-3 text-center text-sm-start">
+                        <div className="align-items-center mt-2 row g-3 text-center text-sm-end">
                             <div className="col-sm">
-                                <div className="text-muted">Showing <span className="fw-semibold"> 4</span> of <span className="fw-semibold">125</span> Results
+                                <div className="text-muted">نمایش  <span className="fw-semibold"> 4 نتیجه </span> از <span className="fw-semibold">125</span> نتیجه
                                 </div>
                             </div>
                             <div className="col-sm-auto">
-                                <ul className="pagination pagination-separated pagination-sm justify-content-center justify-content-sm-start mb-0">
+                                <ul className="pagination pagination-separated pagination-sm justify-content-center justify-content-sm-end mb-0">
                                     <li className="page-item disabled">
-                                        <Link to="#" className="page-link">←</Link>
+                                        <Link to="#" className="page-link">→</Link>
                                     </li>
                                     <li className="page-item">
                                         <Link to="#" className="page-link">1</Link>
@@ -85,7 +85,7 @@ const UpcomingActivities = () => {
                                         <Link to="#" className="page-link">3</Link>
                                     </li>
                                     <li className="page-item">
-                                        <Link to="#" className="page-link">→</Link>
+                                        <Link to="#" className="page-link">←</Link>
                                     </li>
                                 </ul>
                             </div>

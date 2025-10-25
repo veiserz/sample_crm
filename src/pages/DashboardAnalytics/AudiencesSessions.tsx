@@ -34,14 +34,14 @@ const AudiencesSessions = () => {
         <React.Fragment>
             <Col xl={6}>
                 <Card className="card-height-100">
-                    <CardHeader className="align-items-center d-flex">
+                    <CardHeader className="align-items-center d-flex" dir="rtl">
                         <h4 className="card-title mb-0 flex-grow-1">جلسات مخاطبان بر اساس کشور</h4>
                         <div className="flex-shrink-0">
                             <UncontrolledDropdown className="card-header-dropdown">
                                 <DropdownToggle tag="a" className="text-reset dropdown-btn" role="button">
                                     <span className="fw-semibold text-uppercase fs-13">مرتب‌سازی بر اساس: </span><span className="text-muted">{seletedMonth.charAt(0).toUpperCase() + seletedMonth.slice(1)}<i className="mdi mdi-chevron-down ms-1"></i></span>
                                 </DropdownToggle>
-                                <DropdownMenu className="dropdown-menu-end">
+                                <DropdownMenu className="dropdown-menu-end" dir="rtl">
                                     <DropdownItem onClick={() => { onChangeChartPeriod("today"); }} className={seletedMonth === "today" ? "active" : ""}>امروز</DropdownItem>
                                     <DropdownItem onClick={() => { onChangeChartPeriod("lastWeek"); }} className={seletedMonth === "lastWeek" ? "active" : ""}>هفته گذشته</DropdownItem>
                                     <DropdownItem onClick={() => { onChangeChartPeriod("lastMonth"); }} className={seletedMonth === "lastMonth" ? "active" : ""}>ماه گذشته</DropdownItem>

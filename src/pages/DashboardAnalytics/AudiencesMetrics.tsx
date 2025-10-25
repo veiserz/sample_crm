@@ -33,8 +33,8 @@ const AudiencesMetrics = () => {
         <React.Fragment>
             <Col xl={6}>
                 <Card>
-                    <CardHeader className="border-0 align-items-center d-flex">
-                        <h4 className="card-title mb-0 flex-grow-1">عیارهای اندازه‌گیری مخاطبان</h4>
+                    <CardHeader className="border-0 align-items-center d-flex" dir="rtl">
+                        <h4 className="card-title mb-0 flex-grow-1">معیارهای مخاطبان</h4>
                         <div className="d-flex gap-1">
                             <button type="button" className="btn btn-soft-secondary btn-sm" onClick={() => { onChangeChartPeriod("all"); }}>
                                 همه
@@ -50,7 +50,7 @@ const AudiencesMetrics = () => {
                             </button>
                         </div>
                     </CardHeader>
-                    <CardHeader className="p-0 border-0 bg-light-subtle">
+                    <CardHeader className="p-0 border-0 bg-light-subtle" dir="rtl">
                         <Row className="g-0 text-center">
                             <Col xs={6} sm={4}>
                                 <div className="p-3 border border-dashed border-start-0">
@@ -89,13 +89,13 @@ const AudiencesMetrics = () => {
                                             end={3}
                                             duration={3}
                                         />
-                                    </span>m <span className="counter-value" data-target="40">
+                                    </span>دقیقه <span className="counter-value" data-target="40">
                                             <CountUp
                                                 start={0}
                                                 end={40}
                                                 duration={3}
                                             />
-                                        </span>sec
+                                        </span>ثانیه
                                         <span className="text-success ms-1 fs-13"> 37%<i className="ri-arrow-right-up-line ms-1 align-middle"></i></span>
                                     </h5>
                                     <p className="text-muted mb-0">میانگین زمان جلسه</p>
